@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>animation tag</title>
+</head>
+<style>
+    *{
+        margin: 10px;
+    }
+    .header1{
+        background-color: rgb(183, 255, 183);
+        color: indianred;
+        padding: 5px;
+        border: 2px solid black;
+        transition-property: background-color;
+        transition-duration: 2s;
+        margin-bottom: 3px;
+    }
+
+    header:hover {
+        background-color: cadetblue;
+    }
+    .header2{
+        background-color: aqua;
+        padding: 5px;
+        border: 2px double black;
+        animation-name: zero;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes zero{
+        0%{
+            background-color: aqua;
+        }
+        50%{
+            background-color: lightgoldenrodyellow;
+        }
+        100%{
+            background-color: lightcoral;
+        }
+    }
+    div{
+        background-color: rgb(67, 249, 255);
+        border: 3px solid black;
+        height: 50px;
+        width: 50px;
+        margin-left: 50px;
+        animation-name: one;
+        animation-duration:1ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        margin-top: 15px;
+    }
+    @keyframes one{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<body>
+    <header class="header1">online shop</header>
+    <header class="header2">online shop 1</header>
+    <div>
+
+    </div>
+</body>
+
+
+</html>
