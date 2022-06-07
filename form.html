@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <title>
+        form tag
+    </title>
+</head>
+<style>
+    div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+#anime{
+    animation-name: rainbow;
+    animation: 5s;
+}
+@keyframes rainbow{
+30%{
+ background-color:aquamarine;
+}
+70%{
+    background-color:aliceblue;
+}
+100%{
+    background-color: chartreuse;
+}
+}
+</style>
+<body >
+    <h1>
+
+        student details
+    </h1>
+    <div id="anime">
+    <form  method="POST">
+        <label for="first name">
+            first name
+            </label>
+            <input type="text" placeholder="enter student first name" id="first name" name="first name">
+         <br>
+        <br>
+        <label for="last name">
+            last name
+            </label>
+            <input type="text" placeholder="enter student last name" id="last name" name="last name">
+        <br>
+        <br>
+        <label for="email">
+            email adress
+            </label>
+            <input type="email" placeholder="your email adress" id="email" name="email">
+        <br>
+        <br>
+        <label for="mobile number">
+            mobile number
+            </label>
+            <input type="number" placeholder="phone number" id="mobile number" name="mobile no">
+        <br>
+        <br>
+        <label for="gender">
+            gender :
+        </label>
+        &nbsp;&nbsp;
+        male <input type="radio" id="male" name="gender">
+        &nbsp;&nbsp;&nbsp;
+        female<input type="radio" id="female" name="gender">
+        &nbsp;&nbsp;&nbsp;
+        other<input type="radio" id="other" name="gender">
+        <br>
+        <br>
+        <label for="hobby">
+            hobby :
+        </label>
+        &nbsp;&nbsp;
+        reding <input type="checkbox" id="hobby" name="reding">
+        &nbsp;&nbsp;&nbsp;
+        dasing<input type="checkbox" id="hobby" name="dasing">
+        &nbsp;&nbsp;&nbsp;
+        other<input type="checkbox" id="hobby" name="other">
+        <br>
+        <br>
+        <label for="city">
+            city
+        </label>
+        <select>
+            <option>rajkot</option>
+            <option>delhi</option>
+            <option>mumbai</option>
+            <option>goa</option>
+            <option>ahemdabad</option>
+            <option>jamnagar</option>
+            <option>kolkata</option>
+        </select>
+        <br>
+        <br>
+        <label for="adress">
+            adress
+        </label>
+        <textarea>
+
+
+
+
+
+            </textarea>
+        <br>
+        <br>
+        <input type="submit" name="submit" id="submit" value="submit">
+        <br>
+        <br>
+        <button type="button" id="btnsubmit" name="btnsubmit">
+            button submit
+        </button>
+    </form>
+    </div>
+</body>
+
+</html>
